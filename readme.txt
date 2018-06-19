@@ -1,4 +1,4 @@
-Episodio 12-ab
+Episodio 12 - Episodio 11
 --------------------------------------------------------------------------------
 /sucursales/{{ $sucursal->codsuc }}
 action('SucursalesController@show', [$sucursal->codsuc])
