@@ -26,6 +26,7 @@ php artisan make:model Sucursal
 php artisan make:migration create_usuarios_table --create="usuarios"
 php artisan make:migration create_clientes_table --create="clientes"
 php artisan make:migration create_sucursales_table --create="sucursales"
+php artisan make:migration create_recibos_table --create="recibos"
 php artisan help migrate
 php artisan migrate
 php artisan migrate:reset
@@ -56,5 +57,6 @@ config/database.php  (Modificar BD)
 --------------------------------------------------------------------------------
 cd C:\wamp64\laravel\srtrial_prj\srtrial
 php artisan serve
-a
+http://localhost:8000/sucursales
+http://localhost:8000/sucursales/create
 --------------------------------------------------------------------------------
