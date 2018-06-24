@@ -7,7 +7,8 @@
     </hr>
 
     <form method="POST" action="{{url('/sucursales')}}">
-        <input type="hidden" name="_token" value="{{ csrf_token() }}">
+        {{ csrf_field() }}
+
         <div class="form-group">
             <label for="codsuc">Codigo: </label>
             <input class="form-control" name="codsuc" type="text" id="codsuc">
@@ -17,11 +18,10 @@
             <input class="form-control" name="nomsuc" type="text" id="nomsuc">
         </div>
         <div class="form-group">
-            <label for="nomsuc">asasasas: </label>
-            <input class="form-control" name="nomsuc" type="text" id="nomsuc">
+            <button type="submit" class="btn btn-primary">Primary</button>
         </div>
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">Primary</button>
+            @include('layouts.errors')
         </div>
     </form>
 

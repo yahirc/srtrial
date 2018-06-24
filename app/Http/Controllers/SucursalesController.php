@@ -2,11 +2,18 @@
 
 namespace App\Http\Controllers;
 
+use Illuminate\Http\Request;
 use App\Sucursal;
-use Request;
 
 class SucursalesController extends Controller
 {
+    //
+    public function __construct() 
+    {
+        //$this->middleware('auth');
+        $this->middleware('auth')->except(['index']);
+    }
+
     //
     public function index() 
     {
@@ -34,7 +41,13 @@ class SucursalesController extends Controller
     //
     public function store() 
     {
-        $input = Request::all();
+
+        $this->validate(request(), [
+            'codsuc' => 'required',
+            'nomsuc' => 'required'
+        ]);
+
+        $input = request()->all();
         //$input['campo'] = 'valor';
         Sucursal::create($input);
         return redirect('sucursales');

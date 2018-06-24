@@ -1,10 +1,14 @@
-Episodio 12 - Episodio 11
+Episodio 12 - Episodio 20
+--------------------------------------------------------------------------------
+php artisan make::auth
+php artisan make:controller SessionsController
+php artisan make:controller RegistrationController
 --------------------------------------------------------------------------------
 /sucursales/{{ $sucursal->codsuc }}
 action('SucursalesController@show', [$sucursal->codsuc])
 url('/sucursales', $sucursal->codsuc)
 --------------------------------------------------------------------------------
-php artisan make:controller ClientesController
+php artisan make:controller ClientesController -r
 php artisan make:controller SucursalesController
 --------------------------------------------------------------------------------
 php artisan tinker

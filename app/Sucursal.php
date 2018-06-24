@@ -9,9 +9,11 @@ class Sucursal extends Model
 
     protected $table = 'sucursales';
 
-    protected $fillable = [
-        'codsuc', 'nomsuc'
-    ];
+    // Campos q se pueden llenar
+    // protected $fillable = ['codsuc', 'nomsuc'];
+
+    // Campos q no se pueden llenar
+    protected $guarded = ['id'];
 
     public function scopePrueba ($query) 
     {
