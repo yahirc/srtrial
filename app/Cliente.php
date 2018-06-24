@@ -8,9 +8,6 @@ class Cliente extends Model
 {
 
     protected $table = 'clientes';
-
-    protected $fillable = [
-        'sucursal', 'cedula', 'nombre', 'apellido'
-    ];
+    protected $guarded = ['id'];
 
 }

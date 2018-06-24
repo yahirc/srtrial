@@ -18,12 +18,15 @@ Route::get('foo', function () {
 
 Route::get('/','SucursalesController@index')->name('home');
 
-Route::get('clientes','ClientesController@index');
-
 Route::get('sucursales','SucursalesController@index');
 Route::get('sucursales/create','SucursalesController@create');
 Route::get('sucursales/{id}','SucursalesController@show');
 Route::post('sucursales','SucursalesController@store');
+
+Route::get('clientes','ClientesController@index');
+Route::get('clientes/create','ClientesController@create');
+Route::get('clientes/{id}','ClientesController@show');
+Route::post('clientes','ClientesController@store');
 
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');

@@ -7,6 +7,7 @@ use App\Sucursal;
 
 class SucursalesController extends Controller
 {
+
     //
     public function __construct() 
     {
@@ -52,4 +53,5 @@ class SucursalesController extends Controller
         Sucursal::create($input);
         return redirect('sucursales');
     }
+
 }
