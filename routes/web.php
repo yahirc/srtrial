@@ -12,11 +12,7 @@
 */
 
 
-Route::get('foo', function () {
-    return "foo";
-});
-
-Route::get('/','SucursalesController@index')->name('home');
+Route::get('/','ClientesController@index')->name('home');
 
 Route::get('sucursales','SucursalesController@index');
 Route::get('sucursales/create','SucursalesController@create');
@@ -31,9 +27,8 @@ Route::post('clientes','ClientesController@store');
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 
-Route::get('/login', 'SessionsController@create');
+Route::get('/login', 'SessionsController@create')->name('login');;
 Route::post('/login', 'SessionsController@store');
 Route::get('/logout', 'SessionsController@destroy');
 
-//Auth::routes();
-//Route::get('/home', 'HomeController@index')->name('home');
+

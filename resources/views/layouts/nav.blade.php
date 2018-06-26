@@ -5,21 +5,20 @@
 	</button>
 	<div class="collapse navbar-collapse" id="navbarCollapse">
 		<ul class="navbar-nav mr-auto">
-			<li class="nav-item active">
-				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			<li class="nav-item">
+				<a class="nav-link" href="{{ url('/clientes') }}">Clientes</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Link</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link disabled" href="#">Disabled</a>
+				<a class="nav-link" href="#">Ordenes</a>
 			</li>
 		</ul>
         @if (Auth::check())
 		<form class="form-inline mt-2 mt-md-0">
-			<li class="nav-item">
-				<a class="nav-link" href="#">{{ Auth::user()->name }}, {{ Auth::user()->sucursal }}</a>
-			</li>
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="{{ url('/logout') }}">{{ Auth::user()->name }}, {{ Auth::user()->sucursal }}</a>
+				</li>
+			</ul>
 		</form>
         @endif
 	</div>
