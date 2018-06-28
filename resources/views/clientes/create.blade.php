@@ -29,6 +29,16 @@
                     <input class="form-control" type="text" id="apellido">
                 </div>
             </div>
+            <div class="form-row">
+                <div class="form-group col-sm-6">
+                    <label for="dir_res">Direccion: </label>
+                    <input class="form-control" type="text" id="dir_res">
+                </div>
+                <div class="form-group col-sm-6">
+                    <label for="tel_res">Telefono: </label>
+                    <input class="form-control" type="number" id="tel_res">
+                </div>
+            </div>
         </div>
     </div>
     <div class="card">
