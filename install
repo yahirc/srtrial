@@ -1,0 +1,17 @@
+Index.php
+---------
+require __DIR__.'/../bootstrap/autoload.php';
+require __DIR__.'/../srtrial/bootstrap/autoload.php';
+
+$app = require_once __DIR__.'/../bootstrap/app.php';
+$app = require_once __DIR__.'/../srtrial/bootstrap/app.php';
+
+
+.env
+----
+DB_CONNECTION=mysql
+DB_HOST=cloud003.solusoftware.com
+DB_PORT=3306
+DB_DATABASE=srtrial_db
+DB_USERNAME=usrsrtrial
+DB_PASSWORD=passrtrial
