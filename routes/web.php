@@ -24,6 +24,11 @@ Route::get('clientes/create','ClientesController@create');
 Route::get('clientes/{id}','ClientesController@show');
 Route::post('clientes','ClientesController@store');
 
+Route::get('ordenes','OrdenesController@index');
+Route::get('ordenes/create','OrdenesController@create');
+Route::get('ordenes/{id}','OrdenesController@show');
+Route::post('ordenes','OrdenesController@store');
+
 Route::get('/register', 'RegistrationController@create');
 Route::post('/register', 'RegistrationController@store');
 

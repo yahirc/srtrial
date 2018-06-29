@@ -9,6 +9,7 @@ action('SucursalesController@show', [$sucursal->codsuc])
 url('/sucursales', $sucursal->codsuc)
 --------------------------------------------------------------------------------
 php artisan make:controller ClientesController -r
+php artisan make:controller OrdenesController -r
 php artisan make:controller SucursalesController
 --------------------------------------------------------------------------------
 php artisan tinker
@@ -26,6 +27,7 @@ App\Sucursal::all()->toArray();
 php artisan make:model Usuario
 php artisan make:model Cliente
 php artisan make:model Sucursal
+php artisan make:model Orden
 --------------------------------------------------------------------------------
 php artisan make:migration create_usuarios_table --create="usuarios"
 php artisan make:migration create_clientes_table --create="clientes"
@@ -64,3 +66,4 @@ php artisan serve
 http://localhost:8000/sucursales
 http://localhost:8000/sucursales/create
 --------------------------------------------------------------------------------
+

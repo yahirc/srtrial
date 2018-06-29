@@ -9,7 +9,7 @@
 				<a class="nav-link" href="{{ url('/clientes') }}">Clientes</a>
 			</li>
 			<li class="nav-item">
-				<a class="nav-link" href="#">Ordenes</a>
+				<a class="nav-link" href="{{ url('/ordenes') }}">Ordenes</a>
 			</li>
 		</ul>
         @if (Auth::check())
