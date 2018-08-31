@@ -4,11 +4,15 @@
 
     <h1>Clientes</h1>
 
-    </hr>
-    <nav class="navbar navbar-light bg-light">
+    <hr style="background-color: #5DADE2" />
+    
+    <nav class="navbar navbar-light bg-light justify-content-between">
         <form class="form-inline">
             <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
             <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+        <form class="form-inline my-2 my-lg-0">
+            <a href="{{ url('/clientes/create') }}" class="btn btn-success" role="button">Crear</a>
         </form>
     </nav>
     <table class="table table-striped table-sm">
@@ -26,7 +30,7 @@
                 <th scope="row">{{ $cliente->nombre }} {{ $cliente->apellido }}</th>
                 <td>{{ $cliente->tel_res }}</td>
                 <td>{{ $cliente->cedula }}</td>
-                <td>Editar</td>
+                <td><button type="button" class="btn btn-success">Ordenes</button></td>
             </tr>
         </tbody>
         @endforeach

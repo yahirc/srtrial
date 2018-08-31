@@ -2,7 +2,7 @@
 
 <h1>Ordenes</h1>
 
-</hr>
+<hr style="background-color: #5DADE2" />
 
 <form method="POST" action="{{url('/ordenes')}}">
     {{ csrf_field() }}
