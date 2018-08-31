@@ -8,11 +8,11 @@
     
     <nav class="navbar navbar-light bg-light justify-content-between">
         <form class="form-inline">
-            <input class="form-control mr-sm-2" type="search" placeholder="Busqueda" aria-label="Search">
-            <button class="btn btn-outline-info my-2 my-sm-0" type="submit">Buscar</button>
+            <input type="search" class="form-control form-control-sm mr-sm-2" placeholder="Busqueda" aria-label="Search">
+            <button type="submit" class="btn btn-sm btn-outline-info my-2 my-sm-0" >Buscar</button>
         </form>
         <form class="form-inline my-2 my-lg-0">
-            <a href="{{ url('/clientes/create') }}" class="btn btn-success" role="button">Crear</a>
+            <a href="{{ url('/clientes/create') }}" class="btn btn-sm btn-success" role="button">Crear</a>
         </form>
     </nav>
     <table class="table table-striped table-sm">
