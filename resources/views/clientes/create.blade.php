@@ -84,141 +84,141 @@
     <div class="card">
         <h5 class="card-header">Medidas</h5>
         <div class="card-body">
-                <div class="card-body" id="myGroup">
-                    <p>
-                        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample" data-parent="#myGroup" aria-expanded="false" aria-controls="collapseExample">
-                            Cliente
-                        </button>
-                        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample1" data-parent="#myGroup" aria-expanded="false" aria-controls="collapseExample1">
-                            Pantalon
-                        </button>
-                        <button class="btn btn-secondary" type="button" data-toggle="collapse" data-target="#collapseExample2" data-parent="#myGroup" aria-expanded="false" aria-controls="collapseExample2">
-                            Chaqueta
-                        </button>
-                    </p>
-                    <div class="collapse" id="collapseExample">
-                        <div class="card card-body">
-                            <form>
-                                <div class="form-group">
-                                    <label for="prf_comple">Complexion</label>
-                                    <select class="form-control form-control-sm" name="prf_comple" id="prf_comple">
-                                        <option>Delgado</option>
-                                        <option>Normal</option>
-                                        <option>Musculoso</option>
-                                        <option>Muy Musculoso</option>
-                                        <option>Corpulento</option>
-                                        <option>Senior</option>
-                                        <option>Otro</option>
-                                    </select>
+            <div id="accordion">
+                <p>
+                    <button class="btn btn-secondary collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Cliente
+                    </button>
+                    <button class="btn btn-secondary collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Pantalon
+                    </button>
+                    <button class="btn btn-secondary collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Chaqueta
+                    </button>
+                </p>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="prf_comple">Complexion</label>
+                                <select class="form-control" id="prf_comple">
+                                    <option>Delgado</option>
+                                    <option>Normal</option>
+                                    <option>Musculoso</option>
+                                    <option>Muy Musculoso</option>
+                                    <option>Corpulento</option>
+                                    <option>Senior</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="prf_abdom">Abdomen</label>
+                                <select class="form-control" id="prf_abdom">
+                                    <option>Normal</option>
+                                    <option>Plano</option>
+                                    <option>Redondo</option>
+                                    <option>Salido</option>
+                                    <option>Otro</option>
+                                </select>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label for="prf_peso">Peso</label>
+                                    <input type="text" class="form-control" id="prf_peso">
                                 </div>
-                                <div class="form-group">
-                                    <label for="prf_abdom">Abdomen</label>
-                                    <select class="form-control form-control-sm" name="pef_abdom" id="prf_abdom">
-                                        <option>Normal</option>
-                                        <option>Plano</option>
-                                        <option>Redondo</option>
-                                        <option>Salido</option>
-                                        <option>Otro</option>
-                                    </select>
+                                <div class="form-group col-sm-2">
+                                    <label for="prf_altura">Altura </label>
+                                    <input class="form-control" type="text" id="prf_altura">
                                 </div>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-2">
-                                        <label for="prf_peso">Peso</label>
-                                        <input type="text" class="form-control form-control-sm" name="prfpeso" id="prf_peso">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="prf_altura">Altura </label>
-                                        <input class="form-control form-control-sm" type="text" id="prf_altura">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseExample1">
-                        <div class="card card-body">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_largo">Largo</label>
-                                        <input type="number" class="form-control form-control-sm" name="pan_largo" id="pan_largo">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_entrep">Entrepierna </label>
-                                        <input class="form-control form-control-sm" type="number" name="pan_entrep" id="pan_entrep">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_base">Base </label>
-                                        <input class="form-control form-control-sm" type="number" name="pan_base" id="pan_base">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_cintu">Cintura </label>
-                                        <input class="form-control form-control-sm" type="number" name="pan_cintu" id="pan_cintu">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_pierna">Pierna</label>
-                                        <input type="number" class="form-control form-control-sm" name="pan_pierna" id="pan_pierna">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_rodi">Rodilla</label>
-                                        <input class="form-control form-control-sm" type="number" name="pan_rodi" id="pan_rodi">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_bota">Bota </label>
-                                        <input class="form-control form-control-sm" type="number" name="pan_bota" id="pan_bota">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="pan_tiro">Tiro</label>
-                                        <input class="form-control form-control-sm" type="number" name="pan_tiro" id="pan_tiro">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseExample2">
-                        <div class="card card-body">
-                            <form>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_talle">Talle</label>
-                                        <input type="number" class="form-control form-control-sm" name="chq_talle" id="chq_talle">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_largo">Largo</label>
-                                        <input class="form-control form-control-sm" type="number" name="chq_largo" id="chq_largo">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_espal">Espalda</label>
-                                        <input class="form-control form-control-sm" type="number" name="chq_espal" id="chq_espal">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_hombro">Hombro</label>
-                                        <input class="form-control form-control-sm" type="number" name="chq_hombro" id="chq_hombro">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_manga">Manga</label>
-                                        <input type="number" class="form-control form-control-sm" name="chq_manga" id="chq_manga">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_pecho">Pecho</label>
-                                        <input class="form-control form-control-sm" type="number" name="chq_pecho" id="chq_pecho">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_cintu">Cintura</label>
-                                        <input class="form-control form-control-sm" type="number" name="chq_cintu" id="chq_cintu">
-                                    </div>
-                                    <div class="form-group col-sm-2">
-                                        <label for="chq_talla">Talla</label>
-                                        <input class="form-control form-control-sm" type="number" name="chq_talla" id="chq_talla">
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_largo">Largo</label>
+                                    <input type="number" class="form-control" id="pan_largo">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_entrep">Entrepierna </label>
+                                    <input class="form-control" type="number" id="pan_entrep">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_base">Base </label>
+                                    <input class="form-control" type="number" id="pan_base">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_cintu">Cintura </label>
+                                    <input class="form-control" type="number" id="pan_cintu">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_pierna">Pierna</label>
+                                    <input type="number" class="form-control" id="pan_pierna">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_rodi">Rodilla</label>
+                                    <input class="form-control" type="number" id="pan_rodi">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_bota">Bota </label>
+                                    <input class="form-control" type="number" id="pan_bota">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="pan_tiro">Tiro</label>
+                                    <input class="form-control" type="number" id="pan_tiro">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_talle">Talle</label>
+                                    <input type="number" class="form-control" id="chq_talle">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_largo">Largo</label>
+                                    <input class="form-control" type="number" id="chq_largo">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_espal">Espalda</label>
+                                    <input class="form-control" type="number" id="chq_espal">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_hombro">Hombro</label>
+                                    <input class="form-control" type="number" id="chq_hombro">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_manga">Manga</label>
+                                    <input type="number" class="form-control" id="chq_manga">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_pecho">Pecho</label>
+                                    <input class="form-control" type="number" id="chq_pecho">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_cintu">Cintura</label>
+                                    <input class="form-control" type="number" id="chq_cintu">
+                                </div>
+                                <div class="form-group col-sm-2">
+                                    <label for="chq_talla">Talla</label>
+                                    <input class="form-control" type="number" id="chq_talla">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
