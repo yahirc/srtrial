@@ -30,7 +30,10 @@
                 <th scope="row">{{ $cliente->nombre }} {{ $cliente->apellido }}</th>
                 <td>{{ $cliente->tel_res }}</td>
                 <td>{{ $cliente->cedula }}</td>
-                <td><button type="button" class="btn btn-success">Ordenes</button></td>
+                <td>
+                    <button type="button" class="btn btn-sm btn-success">Editar</button>
+                    <button type="button" class="btn btn-sm btn-success">Ordenes</button>
+                </td>
             </tr>
         </tbody>
         @endforeach

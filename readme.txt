@@ -62,6 +62,7 @@ config/database.php  (Modificar BD)
         ],
 --------------------------------------------------------------------------------
 cd C:\wamp64\laravel\srtrial_prj\srtrial
+cd C:\Desarrollo\laravel\srtrial_prj\srtrial
 php artisan serve
 http://localhost:8000/sucursales
 http://localhost:8000/sucursales/create
