@@ -31,7 +31,7 @@
                 <td>{{ $cliente->tel_res }}</td>
                 <td>{{ $cliente->cedula }}</td>
                 <td>
-                    <button type="button" class="btn btn-sm btn-success">Editar</button>
+                <a href="{{ url('/clientes/edit',$cliente->id) }}" class="btn btn-sm btn-success" role="button">Editar</a>
                     <button type="button" class="btn btn-sm btn-success">Ordenes</button>
                 </td>
             </tr>

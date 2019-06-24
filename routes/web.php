@@ -21,8 +21,10 @@ Route::post('sucursales','SucursalesController@store');
 
 Route::get('clientes','ClientesController@index');
 Route::get('clientes/create','ClientesController@create');
+Route::get('clientes/edit/{id}','ClientesController@edit');
 Route::get('clientes/{id}','ClientesController@show');
 Route::post('clientes','ClientesController@store');
+Route::post('clientes/update/{id}','ClientesController@update');
 
 Route::get('ordenes','OrdenesController@index');
 Route::get('ordenes/create','OrdenesController@create');

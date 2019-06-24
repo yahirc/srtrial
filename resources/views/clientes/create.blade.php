@@ -202,17 +202,17 @@
                         <div class="form-row">
                                 <div class="form-group col-sm-2">
                                     <label for="pan_cintu" class="col-form-label-sm">Cintura</label>
-                                    <input type="number" class="form-control form-control-sm" id="pan_cintu">
+                                    <input type="number" class="form-control form-control-sm" style="width: 7em" id="pan_cintu">
                                 </div>
                                 <div class="form-group col-sm-2">
                                     <label for="pan_base" class="col-form-label-sm">Base</label>
-                                    <input class="form-control form-control-sm" type="number" id="pan_base">
+                                    <input class="form-control form-control-sm" type="number" style="width: 7em" id="pan_base">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-group col-sm-2">
                                     <label for="pan_largo" class="col-form-label-sm">Largo</label>
-                                    <input type="number" class="form-control form-control-sm" id="pan_largo">
+                                    <input type="number" class="form-control form-control-sm" min="0" max="999" id="pan_largo">
                                 </div>
                                 <div class="form-group col-sm-2">
                                     <label for="pan_cintu" class="col-form-label-sm">Cintura</label>
