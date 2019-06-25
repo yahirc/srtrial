@@ -22,11 +22,11 @@
             <div class="form-row">
                 <div class="form-group col-sm-6">
                     <label for="nombre" class="col-form-label-sm">Nombre: </label>
-                    <input class="form-control form-control-sm" type="text" name="nombre" id="nombre">
+                    <input class="form-control form-control-sm" type="text" name="nombre" id="nombre" placeholder="nombre" value="{{$cliente->nombre}}">
                 </div>
                 <div class="form-group col-sm-6">
                     <label for="apellido" class="col-form-label-sm">Apellido: </label>
-                    <input class="form-control form-control-sm" type="text" name="apellido" id="apellido">
+                    <input class="form-control form-control-sm" type="text" name="apellido" id="apellido" placeholder="apellido" value="{{$cliente->apellido}}">
                 </div>
             </div>
             <div class="form-row">
@@ -82,6 +82,8 @@
         </div>
     </div>
     <br>
+
+
     <div class="form-group">
         <button type="submit" class="btn btn-sm btn-primary">Guardar</button>
     </div>
